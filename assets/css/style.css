@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dece9c;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Cinzel',sans-serif;
+    
+
+}
+
+h1 {
+    color: #a21232;
+    font-weight: 500;
+}
+
+.main-div {
+    background-color:#dece9c;
+    width: 90%;
+    max-width: 800px;
+    padding: 15px;
+
+    border: 2px solid #20615b;
+    border-radius: 6px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.questions-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.question {
+    color: #20615b;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.answers-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
