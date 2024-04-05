@@ -22,7 +22,7 @@ function displayNextQuestion() {
     questions[currentQuestionIndex].answers.forEach(answer =>{
         let rightAnswer= document.createElement('button')
         rightAnswer.classList.add('button', 'answer')
-        newAnswer.textContent= answer.text
+        rightAnswer.textContent= answer.text
         if (answer.correct) {
             rightAnswer.dataset.correct = answer.correct
         }
