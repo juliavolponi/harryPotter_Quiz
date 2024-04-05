@@ -88,3 +88,7 @@ h1 {
     filter: brightness(0.8);
 
 }
+
+.hide {
+    display: none;
+}
