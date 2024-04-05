@@ -1,8 +1,11 @@
 let startGameButton= document.querySelector('.start-quiz');
 let questionsDiv= document.querySelector('.questions-div');
 let answersDiv= document.querySelector('.answers-div');
+let questionText=document.querySelector('.question')
 
-startGameButton.addEventListener('click', startGame)
+startGameButton.addEventListener('click', startGame);
+
+let currentQuestionIndex= 0
 
 function startGame() {
     startGameButton.classList.add('hide');
@@ -11,6 +14,20 @@ function startGame() {
 }
 
 function displayNextQuestion() {
+    while (answersDiv.firstChild) {
+        answersDiv.removeChild(answersDiv.firstChild)
+    }
+
+    questionText.textContent= questions[currentQuestionIndex].question;
+    questions[currentQuestionIndex].answers.forEach(answer =>{
+        let rightAnswer= document.createElement('button')
+        rightAnswer.classList.add('button', 'answer')
+        newAnswer.textContent= answer.text
+        if (answer.correct) {
+            rightAnswer.dataset.correct = answer.correct
+        }
+
+    })
 
 }
 
