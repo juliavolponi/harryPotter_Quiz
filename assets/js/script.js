@@ -27,6 +27,8 @@ function displayNextQuestion() {
             rightAnswer.dataset.correct = answer.correct
         }
 
+        answersDiv.appendChild(rightAnswer);
+
     })
 
 }
