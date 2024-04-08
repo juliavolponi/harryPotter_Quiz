@@ -14,6 +14,7 @@ function startGame() {
     startGameButton.classList.add('hide');
     questionsDiv.classList.remove('hide');
     displayNextQuestion();
+    displayNextQuestion.add('hide');
 }
 
 function displayNextQuestion() {
@@ -67,7 +68,7 @@ function pickAnswer(event) {
 
 function endOfGame() {
     let totalAnswers= questions.length
-    let finalResult= Math.floor(totalCorrect *100 / totalAnswers)
+    let finalResult= Math.floor(totalCorrect * 100 / totalAnswers)
 
     let message= ''
 
@@ -87,12 +88,14 @@ function endOfGame() {
 
     questionsDiv.innerHTML= 
     `
-    <p>You scored ${totalCorrect} of ${totalAnswers} questions.</p>
-    <span>Result: ${message}</span>
-    <button>
+    <p class=result-message>You scored ${totalCorrect} of ${totalAnswers} questions.
+    <span>Result: ${message}</span></p>
+    
+    <button onclick=window.location.reload() class=button>
     Retake Test
     </button>
     `
+   
 
 }
 
@@ -118,8 +121,8 @@ let questions = [
     },
     {question: 'Where was Hermione when mountain troll showed up in Hogwarts?',
     answers: [
-       {option: 'Bathroom', correct: false},
-       {option:'Kitchen', correct: true},
+       {option: 'Bathroom', correct: true},
+       {option:'Kitchen', correct: false},
        {option:'Great Hall', correct:false},
        {option:'Gryffindor Common Room', correct:false} 
     ]},

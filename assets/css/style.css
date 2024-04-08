@@ -100,3 +100,12 @@ h1 {
 .incorrect {
    background-color: #a21232;
 }
+
+.result-message {
+    font-size: 20px;
+    text-align: center;
+}
+.result-message span {
+    display: block;
+    margin-top: 8px;
+}
