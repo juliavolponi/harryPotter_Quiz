@@ -35,92 +35,92 @@ function displayNextQuestion() {
 
 let questions = [
     {
-        question: 'primeira pergunta?',
+        question: 'Who placed Harry Potter name in the Globet of Fire?',
         answers: [
-           {option: 'a', correct: true},
-           {option:'b', correct: false},
-           {option:'c', correct:false},
-           {option:'d', correct:false} 
+           {option: 'Barty Crouch Jr.', correct: true},
+           {option:'Hermione Granger', correct: false},
+           {option:'Alastor Moody', correct:false},
+           {option:'Bertemious Crouch Sr.', correct:false} 
         ]
     },
     {
-        question: 'segunda pergunta?',
+        question: 'What is profesors Snape patronus??',
         answers: [
-           {option: 'b', correct: true},
-           {option:'a', correct: false},
-           {option:'c', correct:false},
-           {option:'d', correct:false} 
+           {option: 'A snake', correct: false},
+           {option:'A crow', correct: false},
+           {option:'A doe', correct:true},
+           {option:'A crocodile', correct:false} 
         ]
 
     },
-    {question: 'terceira pergunta?',
+    {question: 'Where was Hermione when mountain troll showed up in Hogwarts?',
     answers: [
-       {option: 'd', correct: true},
-       {option:'c', correct: false},
-       {option:'a', correct:false},
-       {option:'b', correct:false} 
+       {option: 'Bathroom', correct: false},
+       {option:'Kitchen', correct: true},
+       {option:'Great Hall', correct:false},
+       {option:'Gryffindor Common Room', correct:false} 
     ]},
     {
-        question: 'quarta pergunta?',
+        question: 'What was an actual charm that helped Gilderoy Lockhart become so famous?',
         answers: [
-           {option: 'a', correct: true},
-           {option:'b', correct: false},
-           {option:'c', correct:false},
-           {option:'d', correct:false} 
+           {option: 'Expecto Patronum', correct: false},
+           {option:'Obliviate', correct: true},
+           {option:'Expelliarmus', correct:false},
+           {option:'Alohomora', correct:false} 
         ]
     },
     {
-        question: 'quinta pergunta?',
+        question: 'What Narcissa Malfoy asked Snape to do?',
         answers: [
-           {option: 'a', correct: true},
-           {option:'b', correct: false},
-           {option:'c', correct:false},
-           {option:'d', correct:false} 
+           {option: 'Clean his house', correct: false},
+           {option:'Help her son', correct: true},
+           {option:'Kiss her', correct:false},
+           {option:'Kill Harry Potter', correct:false} 
         ]
     },
     {
-        question: 'sexta pergunta?',
+        question: 'What is the name of a newspaper that belongs to Luna Lovesgood dad?',
         answers: [
-           {option: 'a', correct: true},
-           {option:'b', correct: false},
-           {option:'c', correct:false},
-           {option:'d', correct:false} 
+           {option: 'Witch Weekly', correct: false},
+           {option:'The Daily Prophet', correct: false},
+           {option:'The Quibbler', correct:true},
+           {option:'Wizarding Weekly', correct:false} 
         ]
     },
    {
-    question: 'setima pergunta?',
+    question: 'Who killed Nagini?',
     answers: [
-       {option: 'a', correct: true},
-       {option:'b', correct: false},
-       {option:'c', correct:false},
-       {option:'d', correct:false} 
+       {option: 'Hermione Granger', correct: false},
+       {option:'Harry Potter', correct: false},
+       {option:'Ron Weasley', correct:false},
+       {option:'Neville Longbottom', correct:true} 
     ]
    },
    {
-    question: 'oitava pergunta?',
+    question: 'What did the second brother choose in the Tale of Three Brothers?',
     answers: [
-       {option: 'a', correct: true},
-       {option:'b', correct: false},
-       {option:'c', correct:false},
-       {option:'d', correct:false} 
+       {option: 'The Resurection Stone', correct: true},
+       {option:'The Elder Wand', correct: false},
+       {option:'The Mirror of Erised', correct:false},
+       {option:'The Invisibility Cloak', correct:false} 
     ]
    },
    {
-    question: 'nona pergunta?',
+    question: 'What was Siriu Black nickname while he was in Hogwarts?',
     answers: [
-       {option: 'a', correct: true},
-       {option:'b', correct: false},
-       {option:'c', correct:false},
-       {option:'d', correct:false} 
+       {option: 'Padfoot', correct: true},
+       {option:'Prongs', correct: false},
+       {option:'Wormtail', correct:false},
+       {option:'Moony', correct:false} 
     ]
    },
    {
-    question: 'decima pergunta?',
+    question: 'Which one of the Weasley children was the oldest?',
     answers: [
-       {option: 'a', correct: true},
-       {option:'b', correct: false},
-       {option:'c', correct:false},
-       {option:'d', correct:false} 
+       {option: 'Ron', correct: false},
+       {option:'Ginny', correct: false},
+       {option:'Charlie', correct:false},
+       {option:'Bill', correct:true} 
     ]
    }
 ]
