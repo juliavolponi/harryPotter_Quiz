@@ -1,9 +1,11 @@
 let startGameButton= document.querySelector('.start-quiz');
 let questionsDiv= document.querySelector('.questions-div');
 let answersDiv= document.querySelector('.answers-div');
-let questionText=document.querySelector('.question')
+let questionText=document.querySelector('.question');
+let nextQuestionButton= document.querySelector('.next-question')
 
 startGameButton.addEventListener('click', startGame);
+nextQuestionButton.addEventListener('click', displayNextQuestion);
 
 let currentQuestionIndex= 0
 
@@ -14,23 +16,47 @@ function startGame() {
 }
 
 function displayNextQuestion() {
-    while (answersDiv.firstChild) {
-        answersDiv.removeChild(answersDiv.firstChild)
-    }
+    hideButtons();
+
 
     questionText.textContent= questions[currentQuestionIndex].question;
     questions[currentQuestionIndex].answers.forEach(answer =>{
         let rightAnswer= document.createElement('button')
         rightAnswer.classList.add('button', 'answer')
         rightAnswer.textContent= answer.option
+
         if (answer.correct) {
             rightAnswer.dataset.correct = answer.correct
         }
 
         answersDiv.appendChild(rightAnswer);
 
+        rightAnswer.addEventListener('click', pickAnswer)
+
     })
 
+}
+
+function hideButtons() {
+    while (answersDiv.firstChild) {
+        answersDiv.removeChild(answersDiv.firstChild)
+    }
+
+}
+
+function pickAnswer(event) {
+
+    document.querySelectorAll('.answer').forEach(button=>{
+        if (button.dataset.correct) {
+            button.classList.add('correct')
+        } else {
+            button.classList.add('incorrect')
+        }
+        button.disabled=true
+    })
+
+    nextQuestionButton.classList.remove('hide');
+    currentQuestionIndex++
 }
 
 let questions = [

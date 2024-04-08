@@ -33,7 +33,7 @@ h1 {
     max-width: 800px;
     padding: 15px;
 
-    border: 2px solid #20615b;
+    border: 2px solid #1a1831;
     border-radius: 6px;
     
     
@@ -74,7 +74,7 @@ h1 {
 }
 
 .button {
-    background-color: #20615b;
+    background-color: #1a1831;
     color: #ffff;
     cursor: pointer;
     font-size: 16px;
@@ -91,4 +91,12 @@ h1 {
 
 .hide {
     display: none;
+}
+
+.correct {
+    background-color:#20615b ;
+}
+
+.incorrect {
+   background-color: #a21232;
 }
