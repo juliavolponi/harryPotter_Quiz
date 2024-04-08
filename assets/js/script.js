@@ -88,6 +88,9 @@ function endOfGame() {
     `
     <p>You scored ${totalAnswers} of ${totalCorrect} questions.</p>
     <span>Result: ${message}</span>
+    <button>
+    Retake Test
+    </button>
     `
 
 }
