@@ -14,18 +14,18 @@ function startGame() {
     startGameButton.classList.add('hide');
     questionsDiv.classList.remove('hide');
     displayNextQuestion();
-    displayNextQuestion.add('hide');
 }
 
 function displayNextQuestion() {
     hideButtons();
 
-    if (questions.length === currentQuestionIndex) {
+    if (questions.length == currentQuestionIndex) {
         return endOfGame()
     }
 
 
     questionText.textContent= questions[currentQuestionIndex].question;
+
     questions[currentQuestionIndex].answers.forEach(answer =>{
         let rightAnswer= document.createElement('button')
         rightAnswer.classList.add('button', 'answer')
@@ -47,10 +47,16 @@ function hideButtons() {
     while (answersDiv.firstChild) {
         answersDiv.removeChild(answersDiv.firstChild)
     }
+    nextQuestionButton.classList.add('hide');
 
 }
 
 function pickAnswer(event) {
+    let pickedAnswer= event.target
+
+    if (pickedAnswer.dataset.correct) {
+        totalCorrect++
+    }
 
     document.querySelectorAll('.answer').forEach(button=>{
         if (button.dataset.correct) {
