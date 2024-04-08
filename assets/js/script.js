@@ -54,6 +54,7 @@ function pickAnswer(event) {
     document.querySelectorAll('.answer').forEach(button=>{
         if (button.dataset.correct) {
             button.classList.add('correct')
+            totalCorrect++;
         } else {
             button.classList.add('incorrect')
         }
@@ -66,7 +67,7 @@ function pickAnswer(event) {
 
 function endOfGame() {
     let totalAnswers= questions.length
-    let finalResult= Math.floor(totalAnswers *100 / totalAnswers)
+    let finalResult= Math.floor(totalCorrect *100 / totalAnswers)
 
     let message= ''
 
@@ -86,7 +87,7 @@ function endOfGame() {
 
     questionsDiv.innerHTML= 
     `
-    <p>You scored ${totalAnswers} of ${totalCorrect} questions.</p>
+    <p>You scored ${totalCorrect} of ${totalAnswers} questions.</p>
     <span>Result: ${message}</span>
     <button>
     Retake Test
