@@ -19,7 +19,7 @@ function startGame() {
 function displayNextQuestion() {
     hideButtons();
 
-    if (questions.length == currentQuestionIndex) {
+    if (questions.length ===  currentQuestionIndex) {
         return endOfGame()
     }
 
@@ -61,7 +61,6 @@ function pickAnswer(event) {
     document.querySelectorAll('.answer').forEach(button=>{
         if (button.dataset.correct) {
             button.classList.add('correct')
-            totalCorrect++;
         } else {
             button.classList.add('incorrect')
         }
@@ -74,7 +73,7 @@ function pickAnswer(event) {
 
 function endOfGame() {
     let totalAnswers= questions.length
-    let finalResult= Math.floor(totalCorrect * 100 / totalAnswers)
+    let finalResult = totalCorrect
 
     let message= ''
 
