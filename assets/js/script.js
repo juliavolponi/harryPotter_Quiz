@@ -2,12 +2,13 @@ let startGameButton= document.querySelector('.start-quiz');
 let questionsDiv= document.querySelector('.questions-div');
 let answersDiv= document.querySelector('.answers-div');
 let questionText=document.querySelector('.question');
-let nextQuestionButton= document.querySelector('.next-question')
+let nextQuestionButton= document.querySelector('.next-question');
 
 startGameButton.addEventListener('click', startGame);
 nextQuestionButton.addEventListener('click', displayNextQuestion);
 
-let currentQuestionIndex= 0
+let currentQuestionIndex= 0;
+let totalCorrect= 0;
 
 function startGame() {
     startGameButton.classList.add('hide');
@@ -17,6 +18,10 @@ function startGame() {
 
 function displayNextQuestion() {
     hideButtons();
+
+    if (questions.length === currentQuestionIndex) {
+        return endOfGame()
+    }
 
 
     questionText.textContent= questions[currentQuestionIndex].question;
@@ -57,6 +62,34 @@ function pickAnswer(event) {
 
     nextQuestionButton.classList.remove('hide');
     currentQuestionIndex++
+}
+
+function endOfGame() {
+    let totalAnswers= questions.length
+    let finalResult= Math.floor(totalAnswers *100 / totalAnswers)
+
+    let message= ''
+
+    switch(true) {
+        case (finalResult >= 90):
+            message= 'Perfecto Patronum!'
+            break
+        case (finalResult >= 70):
+            message= 'Very Good Potta..'
+            break
+        case (finalResult >= 50):
+            message= 'Good..Good..'
+            break
+            default:
+            message= "Hermione wouldn't like this!"
+    }
+
+    questionsDiv.innerHTML= 
+    `
+    <p>You scored ${totalAnswers} of ${totalCorrect} questions.</p>
+    <span>Result: ${message}</span>
+    `
+
 }
 
 let questions = [
