@@ -3,29 +3,36 @@ let questionsDiv= document.querySelector('.questions-div');
 let answersDiv= document.querySelector('.answers-div');
 let questionText=document.querySelector('.question');
 let nextQuestionButton= document.querySelector('.next-question');
+
 // Main event to make buttons of Quiz work
 startGameButton.addEventListener('click', startGame);
 nextQuestionButton.addEventListener('click', displayNextQuestion);
+
 // variables created to increment questions as the user play
 let currentQuestionIndex= 0;
 let totalCorrect= 0;
+
 // Main function that return my displaynextquestion function
 function startGame() {
     startGameButton.classList.add('hide');
     questionsDiv.classList.remove('hide');
     displayNextQuestion();
 }
+
 // Function that target the next question on my array
 function displayNextQuestion() {
     hideButtons();
 
     if (questions.length ===  currentQuestionIndex) {
         return endOfGame()
-    } questionText.textContent= questions[currentQuestionIndex].question;
+    } 
+
+    questionText.textContent= questions[currentQuestionIndex].question;
 
     questions[currentQuestionIndex].answers.forEach(answer =>{
         let rightAnswer= document.createElement('button')
-        rightAnswer.classList.add('button', 'answer').rightAnswer.textContent= answer.option
+        rightAnswer.classList.add('button', 'answer')
+        rightAnswer.textContent= answer.option
 
         if (answer.correct) {
             rightAnswer.dataset.correct = answer.correct
@@ -52,12 +59,14 @@ function pickAnswer(event) {
 
     if (pickedAnswer.dataset.correct) {
         totalCorrect++
-    } document.querySelectorAll('.answer').forEach(button=>{
+    } 
+    document.querySelectorAll('.answer').forEach(button=>{
         if (button.dataset.correct) {
             button.classList.add('correct')
         } else {
             button.classList.add('incorrect')
-        } button.disabled=true
+        } 
+        button.disabled=true
     })
 
     nextQuestionButton.classList.remove('hide');
@@ -71,16 +80,21 @@ function endOfGame() {
     let message= ''
 
     switch(true) {
-        case (finalResult >= 9): message= 'Perfecto Patronum!'
+        case (finalResult >= 9):
+             message= 'Perfecto Patronum!'
             break
-        case (finalResult >= 7): message= 'Very Good Potta..'
+        case (finalResult >= 7): 
+        message= 'Very Good Potta..'
             break
-        case (finalResult >= 5): message= 'Good..Good..'
+        case (finalResult >= 5): 
+        message= 'Good..Good..'
             break
-            default: message= "Hermione wouldn't like this!"
+            default: 
+        message= "Hermione wouldn't like this!"
     }
     // Final result message showing scored points and a message
     // Also created a retake button to reload the quiz questionsDiv.innerHTML= 
+    questionsDiv.innerHTML=
     `
 <p class=result-message>You scored ${totalCorrect} of ${totalAnswers} questions.
     <span>Result: ${message}</span></p>
