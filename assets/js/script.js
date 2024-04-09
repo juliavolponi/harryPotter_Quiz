@@ -78,13 +78,13 @@ function endOfGame() {
     let message= ''
 
     switch(true) {
-        case (finalResult >= 90):
+        case (finalResult >= 9):
             message= 'Perfecto Patronum!'
             break
-        case (finalResult >= 70):
+        case (finalResult >= 7):
             message= 'Very Good Potta..'
             break
-        case (finalResult >= 50):
+        case (finalResult >= 5):
             message= 'Good..Good..'
             break
             default:
