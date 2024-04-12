@@ -4,6 +4,8 @@ Harry Potter Quiz was created intended to question the knowledge of its fans. Qu
 
 [Harry Potter Quiz](https://juliavolponi.github.io/harryPotter_Quiz/)
 
+![Responsive Screens](assets/README_images/responsive_screens.png)
+
 # User Experience
 
 ## Design Choices
