@@ -2,7 +2,7 @@
 
 Harry Potter Quiz was created intended to question the knowledge of its fans. Questioning through all of the movies the user is supposed to test how far they can go with everything they gathered watching Harry Potter.
 
-[Harry Potter Quiz](https://8000-juliavolpon-harrypotter-iiu8dgnjk7i.ws-eu110.gitpod.io/)
+[Harry Potter Quiz](https://juliavolponi.github.io/harryPotter_Quiz/)
 
 # User Experience
 
