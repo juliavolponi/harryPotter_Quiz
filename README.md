@@ -8,6 +8,10 @@ Harry Potter Quiz was created intended to question the knowledge of its fans. Qu
 
 # User Experience
 
+## Wireframe
+The wireframe was made on figma with a basic idea of what the quiz needed to look like.
+![quiz wireframe](assets/README_images/wireframe.png)
+
 ## Design Choices
 * ### Tipography
    * The font chosen was 'Cinzel' for the entire document. It falls back to sans-serif respectively.
