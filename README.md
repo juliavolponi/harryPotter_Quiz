@@ -1,6 +1,6 @@
 # Harry Potter Quiz 
 
-Harry Potter Quiz was created intended to question the knowledge of its fans. Questioning through all of the movies the user is supposed to test how far they can go with everything they gathered watching Harry Potter.
+Welcome to the Harry Potter Quiz! This JavaScript project allows users to test their knowledge of the magical world of Harry Potter by answering a series of questions. Users will be presented with 10 questions and given immediate feedback on their answers. At the end of the quiz, users will see their total points along with a personalized message based on their performance.
 
 [Harry Potter Quiz](https://juliavolponi.github.io/harryPotter_Quiz/)
 
