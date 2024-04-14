@@ -10,7 +10,6 @@ Welcome to the Harry Potter Quiz! This JavaScript project allows users to test t
 
 ## User Stories 
 * As a first-time user, I want to be able to start the quiz easily.
-* As a user, I want clear instructions on how to answer each question.
 * As a user, I want immediate feedback on whether my answer was correct or incorrect.
 * As a user, I want to see my total points and a message based on my performance at the end of the quiz.
 
@@ -47,19 +46,19 @@ The home page of The Quiz displays the sites name as a title and then a containe
 ### Testing
 Based on comprehensive testing, all features of the Harry Potter Quiz project work as intended, providing an easy and straightforward experience for users to achieve their goals. The project has been tested across multiple browsers and screen sizes, ensuring compatibility and responsiveness across various platforms.
 
-# Features Left to Implement
+## Features Left to Implement
 Although the current version of the Harry Potter Quiz project is functional and provides an enjoyable user experience, there are several features that could be implemented in future iterations:
 
 * CSS Styling: Further refine the CSS styling to improve the overall aesthetics and user interface of the quiz, ensuring consistency and coherence with the Harry Potter theme.
 
 * Levels of Difficulty: Introduce different levels of difficulty to the quiz, allowing users to choose between easy, medium, and hard modes. Each level could feature varying degrees of complexit#y in the questions, providing a more challenging experience for seasoned Harry Potter fans.
 
-### Validator Testing
+## Validator Testing
 * HTML
   * No erros were returned when passing through the official W3C validator
 ![HTML testing showing no error](assets/README_images/html_test.png)
 * CSS
-  * A error were returned when passing through the official(Jigsaw) validator  
+  * An error was returned when passing through the official(Jigsaw) validator  
   ![error image](assets/README_images/css_error.png)
   Which has been fixed
   ![CSS testing showing no error](assets/README_images/css_test.png)
@@ -73,14 +72,14 @@ Although the current version of the Harry Potter Quiz project is functional and 
 
 The live link to the Github repository can be found here: https://github.com/juliavolponi/harryPotter_Quiz
 
-## To fork repository on Github
+### To fork repository on Github
 A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository:
 
 1. Log in to GitHub and locate the repository.
 2. In the right hand side of the page inline with the repository name is a button called 'Fork', click on the button to create a copy of the original repository in your GitHub Account.
 
 
-## To create a local clone of this project
+### To create a local clone of this project
 1. Under the repository’s name, click on the code tab.
 2. In the Clone with HTTPS section, click on the clipboard icon to copy the given URL.
 3. In your IDE of choice, open Git Bash.
