@@ -47,6 +47,13 @@ The home page of The Quiz displays the sites name as a title and then a containe
 ### Testing
 Based on comprehensive testing, all features of the Harry Potter Quiz project work as intended, providing an easy and straightforward experience for users to achieve their goals. The project has been tested across multiple browsers and screen sizes, ensuring compatibility and responsiveness across various platforms.
 
+# Features Left to Implement
+Although the current version of the Harry Potter Quiz project is functional and provides an enjoyable user experience, there are several features that could be implemented in future iterations:
+
+* CSS Styling: Further refine the CSS styling to improve the overall aesthetics and user interface of the quiz, ensuring consistency and coherence with the Harry Potter theme.
+
+* Levels of Difficulty: Introduce different levels of difficulty to the quiz, allowing users to choose between easy, medium, and hard modes. Each level could feature varying degrees of complexit#y in the questions, providing a more challenging experience for seasoned Harry Potter fans.
+
 ### Validator Testing
 * HTML
   * No erros were returned when passing through the official W3C validator
@@ -80,3 +87,8 @@ A copy of the GitHub Repository can be made by forking the GitHub account. This 
 Change the current working directory to the location where you want the cloned directory to be made.
 4. Type git clone, and then paste the URL copied from GitHub.
 5. Press enter and the local clone will be created.
+
+## Credits
+I would like to express my gratitude to Code Institute for providing high-quality classes that have greatly improved my understanding of JavaScript and programming logic. It's been invaluable in my learning journey. Special thanks to my tutor, Precious Mentor, for the continuous support, guidance, and valuable feedback throughout the development of my projects. 
+
+
