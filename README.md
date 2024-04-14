@@ -42,3 +42,9 @@ The home page of The Quiz displays the sites name as a title and then a containe
 
 * Retake Quiz: If you'd like to retake the quiz, simply click on the "Retake Quiz" button at the end of the quiz. This will restart the quiz, allowing you to test your knowledge again.
 ![score page](assets/README_images/total_points.png)
+
+
+## Testing
+Based on comprehensive testing, all features of the Harry Potter Quiz project work as intended, providing an easy and straightforward experience for users to achieve their goals. The project has been tested across multiple browsers and screen sizes, ensuring compatibility and responsiveness across various platforms.
+
+## Validator Testing 
