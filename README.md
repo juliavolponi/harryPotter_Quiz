@@ -53,6 +53,13 @@ Although the current version of the Harry Potter Quiz project is functional and 
 
 * Levels of Difficulty: Introduce different levels of difficulty to the quiz, allowing users to choose between easy, medium, and hard modes. Each level could feature varying degrees of complexit#y in the questions, providing a more challenging experience for seasoned Harry Potter fans.
 
+## Technologies Used
+* JavaScript - Add interactivity and dynamic behavior to website.
+* HTML5 - provides the content and structure for the website.
+* CSS - provides the styling.
+* Gitpod - used to deploy the website.
+* Github - used to host and edit the website.
+
 ## Validator Testing
 * HTML
   * No erros were returned when passing through the official W3C validator
