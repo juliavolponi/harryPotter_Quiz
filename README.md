@@ -44,7 +44,39 @@ The home page of The Quiz displays the sites name as a title and then a containe
 ![score page](assets/README_images/total_points.png)
 
 
-## Testing
+### Testing
 Based on comprehensive testing, all features of the Harry Potter Quiz project work as intended, providing an easy and straightforward experience for users to achieve their goals. The project has been tested across multiple browsers and screen sizes, ensuring compatibility and responsiveness across various platforms.
 
-## Validator Testing 
+### Validator Testing
+* HTML
+  * No erros were returned when passing through the official W3C validator
+![HTML testing showing no error](assets/README_images/html_test.png)
+* CSS
+  * A error were returned when passing through the official(Jigsaw) validator  
+  ![error image](assets/README_images/css_error.png)
+  Which has been fixed
+  ![CSS testing showing no error](assets/README_images/css_test.png)
+
+  ## Deployment
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+   * In the Github Repository, navigate to the Settings tab
+   * From the source section drop-down menu, select the Master Branch
+   * Once the master branch has been selected, the page provided the link to the completed website.
+
+
+The live link to the Github repository can be found here: https://github.com/juliavolponi/harryPotter_Quiz
+
+## To fork repository on Github
+A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository:
+
+1. Log in to GitHub and locate the repository.
+2. In the right hand side of the page inline with the repository name is a button called 'Fork', click on the button to create a copy of the original repository in your GitHub Account.
+
+
+## To create a local clone of this project
+1. Under the repository’s name, click on the code tab.
+2. In the Clone with HTTPS section, click on the clipboard icon to copy the given URL.
+3. In your IDE of choice, open Git Bash.
+Change the current working directory to the location where you want the cloned directory to be made.
+4. Type git clone, and then paste the URL copied from GitHub.
+5. Press enter and the local clone will be created.
